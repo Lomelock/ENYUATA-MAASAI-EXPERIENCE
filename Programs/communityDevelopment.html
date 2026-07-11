@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Community Development | Enyuata Maasai Experience</title>
+<meta name="description" content="Community Development is Enyuata Maasai Experience's long-term program addressing land pressure, youth unemployment, health access, and climate resilience facing Maasai communities in Tanzania, and our plan to build sustainable futures.">
+
+<meta property="og:title" content="Community Development | Enyuata Maasai Experience">
+<meta property="og:description" content="Understanding the land, livelihood, and opportunity pressures facing Maasai communities — and our roadmap forward.">
+<meta property="og:type" constent="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1524069290683-0457abfe42c3?auto=format&fit=crop&w=1200&q=80">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23B22222'/%3E%3Ccircle cx='50' cy='50' r='30' fill='%23FBC02D'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Work+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --red: #B22222;
+  --red-deep: #8C1B1B;
+  --orange: #F57C00;
+  --gold: #FBC02D;
+  --white: #FFFFFF;
+  --cream: #FAF6EE;
+  --grey-100: #F8F9FA;
+  --charcoal: #212121;
+  --earth: #2E1C15;
+  --earth-soft: #4A2E22;
+  --text-muted: #6b6058;
+  --border-soft: rgba(33,33,33,0.08);
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Work Sans', sans-serif;
+  --maxw: 1240px;
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --shadow-soft: 0 20px 50px -25px rgba(46, 28, 21, 0.35);
+  --shadow-card: 0 12px 30px -18px rgba(46, 28, 21, 0.28);
+  --ease: cubic-bezier(.22,1,.36,1);
+}
+*{ box-sizing:border-box; margin:0; padding:0; }
+html{ scroll-behavior:smooth; }
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior:auto; }
+  *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; }
+}
+body{ font-family: var(--font-body); color: var(--charcoal); background: var(--white); line-height:1.65; -webkit-font-smoothing:antialiased; overflow-x:hidden; }
+img{ max-width:100%; display:block; }
+a{ color:inherit; text-decoration:none; }
+ul,ol{ list-style:none; }
+button{ font-family:inherit; cursor:pointer; border:none; background:none; }
+.wrap{ max-width:var(--maxw); margin:0 auto; padding:0 32px; }
+section{ position:relative; }
+h1,h2,h3,h4{ font-family:var(--font-display); font-weight:600; color:var(--earth); line-height:1.15; }
+.eyebrow{ display:inline-flex; align-items:center; gap:10px; font-size:0.78rem; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--red); margin-bottom:16px; }
+.eyebrow::before{ content:""; width:22px; height:2px; background:var(--gold); display:inline-block; border-radius:2px; }
+.eyebrow.on-dark{ color:var(--gold); }
+.section-head{ max-width:700px; margin-bottom:52px; }
+.section-head.center{ margin-left:auto; margin-right:auto; text-align:center; }
+.section-head p{ color:var(--text-muted); font-size:1.05rem; margin-top:16px; }
+.sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+.skip-link{ position:absolute; left:16px; top:-60px; background:var(--red); color:#fff; padding:12px 20px; border-radius:8px; z-index:999; transition:top .2s var(--ease); }
+.skip-link:focus{ top:16px; }
+:focus-visible{ outline:3px solid var(--gold); outline-offset:3px; }
+.beadwork{
+  height:14px; width:100%;
+  background-image:
+    linear-gradient(135deg, var(--red) 25%, transparent 25%),
+    linear-gradient(225deg, var(--red) 25%, transparent 25%),
+    linear-gradient(45deg, var(--gold) 25%, transparent 25%),
+    linear-gradient(315deg, var(--orange) 25%, var(--cream) 25%);
+  background-position: 14px 0, 14px 0, 0 0, 0 0;
+  background-size: 28px 14px;
+  background-repeat:repeat-x;
+  background-color: var(--cream);
+}
+.beadwork.on-dark{ background-color: var(--earth); }
+.btn{ display:inline-flex; align-items:center; justify-content:center; gap:8px; padding:13px 26px; border-radius:100px; font-weight:600; font-size:0.95rem; transition: transform .25s var(--ease), box-shadow .25s var(--ease), background .25s var(--ease); white-space:nowrap; }
+.btn-primary{ background:linear-gradient(120deg, var(--red), var(--red-deep)); color:#fff; box-shadow: 0 10px 24px -10px rgba(178,34,34,0.55); }
+.btn-primary:hover{ transform:translateY(-2px); box-shadow:0 16px 30px -12px rgba(178,34,34,0.6); }
+.btn-gold{ background:linear-gradient(120deg, var(--gold), var(--orange)); color:var(--earth); box-shadow:0 10px 24px -10px rgba(245,124,0,0.5); }
+.btn-gold:hover{ transform:translateY(-2px); box-shadow:0 16px 30px -12px rgba(245,124,0,0.55); }
+.btn-outline{ background:transparent; color:var(--white); box-shadow:inset 0 0 0 2px rgba(255,255,255,0.75); }
+.btn-outline:hover{ background:rgba(255,255,255,0.14); transform:translateY(-2px); }
+.btn-outline-dark{ background:transparent; color:var(--earth); box-shadow:inset 0 0 0 2px rgba(46,28,21,0.3); }
+.btn-outline-dark:hover{ background:rgba(46,28,21,0.06); }
+.site-nav{ position:sticky; top:0; z-index:500; background:rgba(255,255,255,0.92); backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px); border-bottom:1px solid var(--border-soft); transition: box-shadow .3s var(--ease); }
+.site-nav.scrolled{ box-shadow: 0 8px 24px -18px rgba(46,28,21,0.4); }
+.nav-inner{ max-width:var(--maxw); margin:0 auto; padding:16px 32px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+.brand{ display:flex; align-items:center; gap:12px; }
+.brand-mark{ width:44px; height:44px; border-radius:50%; flex:none; background: conic-gradient(from 210deg, var(--red), var(--orange), var(--gold), var(--red)); display:flex; align-items:center; justify-content:center; box-shadow: inset 0 0 0 3px rgba(255,255,255,0.65); }
+.brand-mark span{ font-family:var(--font-display); font-weight:700; color:#fff; font-size:1rem; }
+.brand-name{ display:flex; flex-direction:column; line-height:1.1; }
+.brand-name strong{ font-family:var(--font-display); font-size:1.08rem; font-weight:700; color:var(--earth); }
+.brand-name em{ font-style:normal; font-size:0.68rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--red); font-weight:600; margin-top:2px;}
+.nav-links{ display:flex; align-items:center; gap:30px; }
+.nav-links a{ font-size:0.95rem; font-weight:500; color:var(--charcoal); position:relative; padding:6px 2px; }
+.nav-links a::after{ content:""; position:absolute; left:0; bottom:0; width:0; height:2px; background:var(--gold); transition:width .25s var(--ease); }
+.nav-links a:hover::after, .nav-links a:focus-visible::after{ width:100%; }
+.nav-donate{ display:flex; align-items:center; gap:18px; }
+.hamburger{ display:none; flex-direction:column; gap:5px; width:26px; padding:8px; }
+.hamburger span{ height:2px; background:var(--earth); border-radius:2px; transition:.3s var(--ease); }
+.mobile-menu{ display:none; position:fixed; inset:0; background:var(--white); z-index:600; padding:100px 32px 40px; flex-direction:column; gap:26px; overflow-y:auto; }
+.mobile-menu.open{ display:flex; }
+.mobile-menu a{ font-family:var(--font-display); font-size:1.6rem; color:var(--earth); }
+.mobile-close{ position:fixed; top:20px; right:24px; z-index:610; display:none; font-size:1.8rem; color:var(--earth); }
+.mobile-close.open{ display:block; }
+.page-hero{ position:relative; min-height:72vh; display:flex; align-items:flex-end; color:#fff; overflow:hidden; }
+.page-hero-media{ position:absolute; inset:0; z-index:0; }
+.page-hero-media img{ width:100%; height:100%; object-fit:cover; }
+.page-hero-media::after{
+  content:""; position:absolute; inset:0;
+  background:
+    linear-gradient(0deg, rgba(20,10,7,0.9) 0%, rgba(46,28,21,0.5) 48%, rgba(59,20,14,0.3) 100%),
+    linear-gradient(100deg, rgba(140,27,27,0.5) 0%, rgba(0,0,0,0) 55%);
+}
+.breadcrumb{ position:relative; z-index:2; display:flex; align-items:center; gap:8px; font-size:0.85rem; color:rgba(255,255,255,0.75); padding:28px 0 0; }
+.breadcrumb a{ color:rgba(255,255,255,0.9); font-weight:600; }
+.breadcrumb a:hover{ color:var(--gold); }
+.page-hero-inner{ position:relative; z-index:2; padding:40px 0 76px; max-width:var(--maxw); margin:0 auto; width:100%; }
+.page-hero-tag{ display:inline-flex; align-items:center; gap:10px; padding:8px 16px; border:1px solid rgba(255,255,255,0.35); border-radius:100px; font-size:0.78rem; letter-spacing:0.1em; text-transform:uppercase; font-weight:600; margin-bottom:24px; background:rgba(255,255,255,0.08); backdrop-filter:blur(6px); }
+.page-hero-tag .dot{ width:7px; height:7px; border-radius:50%; background:var(--gold); }
+.page-hero h1{ color:#fff; font-size:clamp(2.1rem, 4.6vw, 3.8rem); max-width:18ch; letter-spacing:-0.01em; }
+.page-hero p.lede{ margin-top:22px; font-size:1.1rem; max-width:60ch; color:rgba(255,255,255,0.88); }
+.page-hero-ctas{ display:flex; gap:16px; margin-top:34px; flex-wrap:wrap; }
+.facts{ background:var(--earth); color:#fff; padding:64px 0; }
+.facts-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+.fact-card{ padding:8px 6px; }
+.fact-num{ font-family:var(--font-display); font-size:clamp(1.9rem,3vw,2.6rem); font-weight:700; background:linear-gradient(120deg, var(--gold), var(--orange)); -webkit-background-clip:text; background-clip:text; color:transparent; line-height:1; }
+.fact-label{ margin-top:10px; font-size:0.92rem; color:rgba(255,255,255,0.82); line-height:1.5; }
+.fact-source{ margin-top:6px; font-size:0.72rem; color:rgba(255,255,255,0.48); }
+.intro{ padding:110px 0 90px; background:#fff; }
+.intro-grid{ display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start; }
+.intro-copy p{ color:var(--text-muted); font-size:1.04rem; margin-bottom:18px; }
+.intro-copy p:last-child{ margin-bottom:0; }
+.intro-aside{ background:var(--grey-100); border-left:3px solid var(--gold); border-radius:var(--radius-sm); padding:28px 26px; }
+.intro-aside h4{ font-size:1rem; margin-bottom:10px; }
+.intro-aside p{ font-size:0.9rem; color:var(--text-muted); }
+.reality{ padding:110px 0; background:var(--cream); }
+.reality-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
+.reality-card{ background:#fff; border-radius:var(--radius-md); padding:32px 30px; box-shadow:var(--shadow-card); display:flex; flex-direction:column; gap:14px; }
+.reality-icon{ width:48px; height:48px; border-radius:12px; display:flex; align-items:center; justify-content:center; font-size:1.3rem; flex:none; }
+.reality-card h3{ font-size:1.14rem; }
+.reality-card p{ color:var(--text-muted); font-size:0.94rem; }
+.reality-card .src{ font-size:0.75rem; color:var(--text-muted); opacity:0.75; margin-top:2px; }
+.barriers{ padding:110px 0; background:#fff; }
+.barriers-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:var(--border-soft); border-radius:var(--radius-lg); overflow:hidden; }
+.barrier-item{ background:#fff; padding:34px 28px; transition:background .3s var(--ease); }
+.barrier-item:hover{ background:var(--grey-100); }
+.barrier-item h3{ font-size:1.04rem; margin-bottom:8px; }
+.barrier-item p{ font-size:0.89rem; color:var(--text-muted); }
+.forward{ padding:110px 0; background:var(--earth); color:#fff; }
+.forward .section-head p{ color:rgba(255,255,255,0.72); }
+.pillars-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+.pillar-card{ background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius-md); padding:30px 26px; transition:transform .3s var(--ease), background .3s var(--ease); }
+.pillar-card:hover{ transform:translateY(-6px); background:rgba(255,255,255,0.08); }
+.pillar-num{ font-family:var(--font-display); font-size:0.85rem; color:var(--gold); font-weight:700; letter-spacing:0.06em; }
+.pillar-card h3{ color:#fff; font-size:1.08rem; margin:14px 0 10px; }
+.pillar-card p{ font-size:0.9rem; color:rgba(255,255,255,0.7); }
+.roadmap{ padding:110px 0; background:var(--cream); }
+.roadmap-track{ position:relative; display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+.roadmap-track::before{ content:""; position:absolute; top:26px; left:8%; right:8%; height:2px; background:repeating-linear-gradient(90deg, var(--gold) 0 10px, transparent 10px 18px); z-index:0; }
+.phase-card{ position:relative; z-index:1; }
+.phase-badge{ width:52px; height:52px; border-radius:50%; background:#fff; box-shadow:var(--shadow-card); display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-weight:700; color:var(--red); font-size:1.1rem; margin-bottom:20px; border:2px solid var(--gold); }
+.phase-card h3{ font-size:1.08rem; margin-bottom:8px; }
+.phase-card .phase-when{ display:block; font-size:0.76rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--red); font-weight:700; margin-bottom:10px; }
+.phase-card p{ font-size:0.92rem; color:var(--text-muted); }
+.phase-card ul{ margin-top:12px; display:flex; flex-direction:column; gap:8px; }
+.phase-card ul li{ font-size:0.86rem; color:var(--text-muted); padding-left:18px; position:relative; }
+.phase-card ul li::before{ content:"—"; position:absolute; left:0; color:var(--gold); font-weight:700; }
+.disclosure{ padding:70px 0; background:#fff; }
+.disclosure-box{ background:var(--grey-100); border-radius:var(--radius-lg); padding:40px 44px; display:flex; gap:24px; align-items:flex-start; }
+.disclosure-icon{ font-size:1.6rem; color:var(--red); flex:none; }
+.disclosure-box h4{ font-size:1.05rem; margin-bottom:8px; }
+.disclosure-box p{ font-size:0.92rem; color:var(--text-muted); }
+.cta-band{ padding:100px 0; text-align:center; color:#fff; position:relative; overflow:hidden; background:linear-gradient(120deg, var(--red) 0%, var(--red-deep) 45%, var(--earth) 100%); }
+.cta-band::before{ content:""; position:absolute; inset:0; opacity:0.15; pointer-events:none; background-image: radial-gradient(circle, #fff 1.5px, transparent 1.6px); background-size:26px 26px; }
+.cta-band h2{ color:#fff; font-size:clamp(1.9rem,3.6vw,2.8rem); max-width:20ch; margin:0 auto 18px; position:relative; }
+.cta-band p{ color:rgba(255,255,255,0.85); max-width:580px; margin:0 auto 34px; position:relative; }
+.cta-actions{ display:flex; gap:16px; justify-content:center; flex-wrap:wrap; position:relative; }
+.sources{ padding:60px 0 100px; background:#fff; }
+.sources h4{ font-size:0.9rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin-bottom:16px; }
+.sources ul{ display:flex; flex-direction:column; gap:8px; }
+.sources li{ font-size:0.84rem; color:var(--text-muted); }
+footer{ background:var(--earth); color:rgba(255,255,255,0.82); padding:70px 0 0; }
+.footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:36px; padding-bottom:46px; border-bottom:1px solid rgba(255,255,255,0.12); }
+.footer-brand p{ font-size:0.88rem; margin:18px 0 22px; color:rgba(255,255,255,0.62); max-width:32ch; }
+.footer-col h4{ color:#fff; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:18px; }
+.footer-col ul{ display:flex; flex-direction:column; gap:11px; }
+.footer-col a{ font-size:0.9rem; color:rgba(255,255,255,0.68); transition:.2s; }
+.footer-col a:hover{ color:var(--gold); }
+.footer-social{ display:flex; gap:10px; margin-top:6px; }
+.footer-social a{ width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; }
+.footer-social a:hover{ background:var(--gold); color:var(--earth); }
+.footer-bottom{ display:flex; justify-content:space-between; align-items:center; padding:26px 0; flex-wrap:wrap; gap:14px; font-size:0.82rem; color:rgba(255,255,255,0.55); }
+.footer-legal{ display:flex; gap:22px; }
+.footer-legal a:hover{ color:#fff; }
+.to-top{ position:fixed; right:26px; bottom:26px; width:50px; height:50px; border-radius:50%; z-index:400; background:linear-gradient(120deg, var(--red), var(--orange)); color:#fff; display:flex; align-items:center; justify-content:center; box-shadow:0 14px 30px -12px rgba(178,34,34,0.6); opacity:0; pointer-events:none; transform:translateY(10px); transition:.3s var(--ease); }
+.to-top.show{ opacity:1; pointer-events:auto; transform:translateY(0); }
+.reveal{ opacity:0; transform:translateY(24px); transition:opacity .7s var(--ease), transform .7s var(--ease); }
+.reveal.in{ opacity:1; transform:translateY(0); }
+.img-fallback{ display:flex !important; align-items:center; justify-content:center; background:linear-gradient(135deg, var(--cream), var(--grey-100)); color:var(--red); font-size:1.6rem; }
+@media (max-width:1080px){
+  .facts-grid{ grid-template-columns:repeat(2,1fr); }
+  .reality-grid{ grid-template-columns:1fr; }
+  .barriers-grid{ grid-template-columns:repeat(2,1fr); }
+  .pillars-grid{ grid-template-columns:repeat(2,1fr); }
+  .roadmap-track{ grid-template-columns:1fr; }
+  .roadmap-track::before{ display:none; }
+  .intro-grid{ grid-template-columns:1fr; }
+  .footer-grid{ grid-template-columns:1fr 1fr; }
+}
+@media (max-width:860px){
+  .nav-links{ display:none; }
+  .hamburger{ display:flex; }
+  .nav-donate .btn-primary{ display:none; }
+  .page-hero-inner{ padding:30px 0 60px; }
+  .disclosure-box{ flex-direction:column; padding:30px 26px; }
+}
+@media (max-width:640px){
+  .wrap{ padding:0 20px; }
+  .facts-grid{ grid-template-columns:1fr 1fr; }
+  .barriers-grid{ grid-template-columns:1fr; }
+  .pillars-grid{ grid-template-columns:1fr; }
+  .footer-grid{ grid-template-columns:1fr 1fr; padding-bottom:30px; }
+  .footer-bottom{ flex-direction:column; align-items:flex-start; }
+}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="site-nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand" aria-label="Enyuata Maasai Experience — Home">
+      <span class="brand-mark" aria-hidden="true"><span>EME</span></span>
+      <span class="brand-name">
+        <strong>Enyuata Maasai Experience</strong>
+        <em>Tanzania</em>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#programs">Programs</a>
+      <a href="../index.html#gallery">Gallery</a>
+      <a href="../index.html#volunteer">Volunteer</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <div class="nav-donate">
+      <a href="../index.html#donate" class="btn btn-primary">Donate Now</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<button class="mobile-close" id="mobileClose" aria-label="Close menu">&times;</button>
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+  <a href="../index.html">Home</a>
+  <a href="../index.html#about">About</a>
+  <a href="../index.html#programs">Programs</a>
+  <a href="../index.html#gallery">Gallery</a>
+  <a href="../index.html#volunteer">Volunteer</a>
+  <a href="../index.html#contact">Contact</a>
+  <a href="../index.html#donate" class="btn btn-primary" style="align-self:flex-start; margin-top:10px;">Donate Now</a>
+</nav>
+
+<main id="main">
+
+<section class="page-hero" aria-label="Community Development introduction">
+  <div class="page-hero-media" aria-hidden="true">
+    <img src="https://images.unsplash.com/photo-1524069290683-0457abfe42c3?auto=format&fit=crop&w=2000&q=80" alt="" loading="eager" onerror="this.closest('.page-hero-media').classList.add('img-fallback'); this.remove();">
+  </div>
+  <div class="wrap">
+    <div class="breadcrumb">
+      <a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="../index.html#programs">Programs</a><span aria-hidden="true">/</span><span>Community Development</span>
+    </div>
+    <div class="page-hero-inner">
+      <span class="page-hero-tag"><span class="dot"></span> Program Deep Dive</span>
+      <h1>Community Development</h1>
+      <p class="lede">Beyond any single need, Maasai communities in northern Tanzania are navigating shrinking grazing land, limited youth opportunity, and thin health infrastructure all at once. This page looks honestly at those long-term pressures — and lays out what Enyuata Maasai Experience is building toward as our broadest, longest-horizon program.</p>
+      <div class="page-hero-ctas">
+        <a href="../index.html#donate" class="btn btn-gold">Support This Program</a>
+        <a href="#way-forward" class="btn btn-outline">See Our Plan</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="beadwork on-dark" role="presentation"></div>
+
+<section class="facts" aria-labelledby="facts-heading">
+  <div class="wrap">
+    <h2 id="facts-heading" class="sr-only">Regional Context</h2>
+    <div class="facts-grid">
+      <div class="fact-card reveal">
+        <div class="fact-num">40%+</div>
+        <div class="fact-label">of Tanzania's territory is designated protected or conservation land — a share that has grown over time, affecting land available to pastoralist communities.</div>
+        <div class="fact-source">The Conversation, land use analysis</div>
+      </div>
+      <div class="fact-card reveal">
+        <div class="fact-num">26%</div>
+        <div class="fact-label">of young Tanzanians report being unemployed and actively looking for work, more than double the rate among older generations.</div>
+        <div class="fact-source">Afrobarometer survey</div>
+      </div>
+      <div class="fact-card reveal">
+        <div class="fact-num">1.7M</div>
+        <div class="fact-label">unemployed youth aged 15–35 were identified nationally, with vocational training access remaining limited outside major towns.</div>
+        <div class="fact-source">United Republic of Tanzania, 2021 labour report</div>
+      </div>
+      <div class="fact-card reveal">
+        <div class="fact-num">44%</div>
+        <div class="fact-label">of the rural population has access to an improved water source, underscoring how far basic infrastructure still needs to reach.</div>
+        <div class="fact-source">Water Source Quality in Northern and Central Tanzania study</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="intro" aria-labelledby="intro-heading">
+  <div class="wrap intro-grid">
+    <div class="intro-copy reveal">
+      <span class="eyebrow">Why This Program Exists</span>
+      <h2 id="intro-heading">Long-term change needs a program built for the long term.</h2>
+      <p>Our other three programs respond to specific, immediate needs: hygiene access, school costs, food and water. Community Development is different — it's where we invest in the underlying conditions that determine whether a community can sustain progress once the most urgent needs are met.</p>
+      <p>That means grappling with harder, slower-moving issues: land use policy that continues to reshape how much grazing land is available to pastoralist communities, a youth population growing faster than the job market can absorb, and health and water infrastructure that still hasn't reached many rural areas. These are national-level challenges, but their effects are felt most acutely at the community level.</p>
+      <p>Our approach here isn't to solve everything at once. It's to build local capacity — vocational skills, sustainable land and water practices, health outreach, and community-led planning — so that Maasai communities are better equipped to navigate whatever the coming years bring.</p>
+    </div>
+    <div class="intro-aside reveal">
+      <h4>A note on our data</h4>
+      <p>Enyuata Maasai Experience is a newly established organization. The regional statistics on this page come from published research, government labour reports, and human rights organizations (cited at the bottom of this page), not from our own program results yet — we have none to report. Land use policy in Tanzania is an evolving and sometimes disputed area; we've aimed to describe it factually rather than take a position on any specific government decision.</p>
+    </div>
+  </div>
+</section>
+
+<section class="reality" aria-labelledby="reality-heading">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">The Current Reality</span>
+      <h2 id="reality-heading">What's shaping community life today</h2>
+      <p>A closer look at the four long-term pressures affecting the communities we work alongside.</p>
+    </div>
+    <div class="reality-grid">
+      <article class="reality-card reveal">
+        <div class="reality-icon" style="background:rgba(178,34,34,0.1); color:var(--red);">🗺</div>
+        <h3>Grazing land continues to shrink</h3>
+        <p>Over 40% of Tanzania is designated as protected or conservation land, and expansion of these areas has repeatedly reduced the grazing land available to Maasai pastoralist communities in the north, according to human rights and land-use researchers.</p>
+        <span class="src">Sources: Minority Rights Group; The Conversation, Tanzania land use analysis</span>
+      </article>
+      <article class="reality-card reveal">
+        <div class="reality-icon" style="background:rgba(245,124,0,0.12); color:var(--orange);">💼</div>
+        <h3>Young people can't find enough work</h3>
+        <p>A quarter of young Tanzanians report being unemployed and looking for work, and national surveys find a persistent gap between the number of young job seekers and available formal employment — a gap felt more sharply in rural areas with fewer vocational training options.</p>
+        <span class="src">Sources: Afrobarometer; URT 2021 labour force report</span>
+      </article>
+      <article class="reality-card reveal">
+        <div class="reality-icon" style="background:rgba(251,192,45,0.16); color:#B98900;">🏥</div>
+        <h3>Health services remain distant</h3>
+        <p>Rural Maasai communities are frequently far from the nearest clinic or hospital, a distance researchers link to worse maternal and child health outcomes and delayed treatment for preventable illness.</p>
+        <span class="src">Source: PMC, "Ethnicity and Child Health in Northern Tanzania"</span>
+      </article>
+      <article class="reality-card reveal">
+        <div class="reality-icon" style="background:rgba(178,34,34,0.1); color:var(--red);">🌍</div>
+        <h3>Climate pressure compounds everything else</h3>
+        <p>More frequent and severe droughts intersect with shrinking land access, meaning communities have less room to adapt their traditional coping strategies than they did a generation ago.</p>
+        <span class="src">Source: IFRC, Tanzania Food Insecurity Emergency Plan of Action</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="barriers" aria-labelledby="barriers-heading">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Root Causes</span>
+      <h2 id="barriers-heading">Why these patterns persist</h2>
+      <p>These are structural, often national-level pressures — which is exactly why community-level capacity building matters so much.</p>
+    </div>
+    <div class="barriers-grid reveal">
+      <div class="barrier-item"><h3>Evolving land use policy</h3><p>Conservation and tourism land designations continue to shift, changing what land is available for grazing over time.</p></div>
+      <div class="barrier-item"><h3>Limited vocational infrastructure</h3><p>Technical and vocational training centers are concentrated in towns, far from many rural Maasai communities.</p></div>
+      <div class="barrier-item"><h3>Thin rural health infrastructure</h3><p>Clinics and trained health workers remain sparse relative to the distances rural families must travel.</p></div>
+      <div class="barrier-item"><h3>Climate variability</h3><p>Less predictable rainfall reduces the reliability of traditional pastoralist land and water management.</p></div>
+      <div class="barrier-item"><h3>Limited market integration</h3><p>Remote communities have fewer channels to sell livestock or goods at fair prices.</p></div>
+      <div class="barrier-item"><h3>Underrepresentation in planning</h3><p>Community voices are not always included early enough in decisions that affect land and resource use.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="forward" id="way-forward" aria-labelledby="forward-heading">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow on-dark">The Way Forward</span>
+      <h2 id="forward-heading" style="color:#fff;">Our approach to Community Development</h2>
+      <p>A program built around six pillars — the long-horizon investments that help communities sustain progress once urgent needs are met.</p>
+    </div>
+    <div class="pillars-grid">
+      <div class="pillar-card reveal">
+        <span class="pillar-num">Pillar 01</span>
+        <h3>Youth Vocational Training</h3>
+        <p>Partnering with local training providers to bring practical, employable skills closer to Maasai communities rather than requiring relocation to towns.</p>
+      </div>
+      <div class="pillar-card reveal">
+        <span class="pillar-num">Pillar 02</span>
+        <h3>Sustainable Land &amp; Water Stewardship</h3>
+        <p>Supporting land and water management practices that help communities make the most of the resources they have access to.</p>
+      </div>
+      <div class="pillar-card reveal">
+        <span class="pillar-num">Pillar 03</span>
+        <h3>Health Outreach</h3>
+        <p>Mobile and community-based health outreach to close the distance gap between rural households and basic care.</p>
+      </div>
+      <div class="pillar-card reveal">
+        <span class="pillar-num">Pillar 04</span>
+        <h3>Clean Water Infrastructure</h3>
+        <p>Longer-term investment in boreholes and protected water points as part of a broader development plan, not just emergency response.</p>
+      </div>
+      <div class="pillar-card reveal">
+        <span class="pillar-num">Pillar 05</span>
+        <h3>Community Leadership &amp; Governance Training</h3>
+        <p>Supporting elders and emerging local leaders to represent their communities effectively in land and resource planning conversations.</p>
+      </div>
+      <div class="pillar-card reveal">
+        <span class="pillar-num">Pillar 06</span>
+        <h3>Market Access for Livestock &amp; Goods</h3>
+        <p>Helping connect communities with fairer markets, reducing the disadvantage of remoteness in livestock and craft trade.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="beadwork" role="presentation"></div>
+
+<section class="roadmap" aria-labelledby="roadmap-heading">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Our Roadmap</span>
+      <h2 id="roadmap-heading">How we plan to get there</h2>
+      <p>A phased rollout, starting narrow and trusted, then scaling as we learn what works in each community.</p>
+    </div>
+    <div class="roadmap-track reveal">
+      <div class="phase-card">
+        <div class="phase-badge">01</div>
+        <span class="phase-when">Phase One — Listen &amp; Map</span>
+        <h3>Community entry and needs mapping</h3>
+        <p>Before committing to any long-term investment, we work with elders and local leaders to map each community's priorities.</p>
+        <ul>
+          <li>Community listening sessions in 2–3 villages</li>
+          <li>Mapping of existing health, water, and training gaps</li>
+          <li>Identification of local leadership partners</li>
+        </ul>
+      </div>
+      <div class="phase-card">
+        <div class="phase-badge">02</div>
+        <span class="phase-when">Phase Two — Build &amp; Train</span>
+        <h3>Vocational training and health outreach</h3>
+        <p>With priorities identified, we invest in the training and outreach programs communities have told us matter most.</p>
+        <ul>
+          <li>First vocational training cohort launched</li>
+          <li>Mobile health outreach visits begin</li>
+          <li>Water infrastructure planning with local leaders</li>
+        </ul>
+      </div>
+      <div class="phase-card">
+        <div class="phase-badge">03</div>
+        <span class="phase-when">Phase Three — Scale &amp; Sustain</span>
+        <h3>Governance training and expansion</h3>
+        <p>Building local leadership capacity so communities can advocate for themselves, while extending support to new areas.</p>
+        <ul>
+          <li>Community governance and planning training</li>
+          <li>Market access partnerships for livestock and goods</li>
+          <li>Expansion to additional Maasai communities</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="disclosure">
+  <div class="wrap">
+    <div class="disclosure-box reveal">
+      <span class="disclosure-icon" aria-hidden="true">ⓘ</span>
+      <div>
+        <h4>Where we are right now</h4>
+        <p>Enyuata Maasai Experience is a newly founded nonprofit. The roadmap above describes our plan, not results already achieved. As Phase One launches, we'll replace these projections with real training numbers, real outreach visits, and real stories from the communities in the program — with full transparency about what's working and what needs to change.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band" aria-labelledby="cta-heading">
+  <div class="wrap">
+    <h2 id="cta-heading">Help Us Move From Plan to Practice</h2>
+    <p>A vocational training slot, a mobile health visit, or a leadership workshop — every contribution builds the long-term capacity that helps a community sustain its own progress.</p>
+    <div class="cta-actions">
+      <a href="../index.html#donate" class="btn btn-gold">Donate to This Program</a>
+      <a href="../index.html#volunteer" class="btn btn-outline">Volunteer With Us</a>
+    </div>
+  </div>
+</section>
+
+<section class="sources">
+  <div class="wrap">
+    <h4>Sources referenced on this page</h4>
+    <ul>
+      <li>Minority Rights Group, "Beyond just conservation: a history of Maasai dispossession"</li>
+      <li>The Conversation, "Tanzania's Maasai are being forced off their ancestral land"</li>
+      <li>Afrobarometer, "Tanzanian youth better educated than older generations but struggle with unemployment"</li>
+      <li>United Republic of Tanzania, 2021 government labour force report (cited via Taylor &amp; Francis vocational education study)</li>
+      <li>PMC, "Ethnicity and Child Health in Northern Tanzania: Maasai Pastoralists Are Disadvantaged"</li>
+      <li>IFRC, "Tanzania: Food Insecurity (Drought) — Emergency Plan of Action" (2022)</li>
+      <li>SciRP, "Water Source Quality in Northern and Central Tanzania: Implications for Rural Communities"</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true"><span>EME</span></span>
+          <span class="brand-name" style="color:#fff;">
+            <strong style="color:#fff;">Enyuata Maasai Experience</strong>
+            <em style="color:var(--gold);">Tanzania</em>
+          </span>
+        </div>
+        <p>Empowering Maasai Communities. Preserving Culture. Inspiring Hope. A nonprofit organization based in Tanzania, welcoming support from around the world.</p>
+        <div class="footer-social" aria-label="Social media">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="X / Twitter">𝕏</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html#about">About Us</a></li>
+          <li><a href="../index.html#programs">Programs</a></li>
+          <li><a href="../index.html#gallery">Gallery</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="wome's.html">Women's Dignity</a></li>
+          <li><a href="educationalsupport.html">Education Support</a></li>
+          <li><a href="basicneeds.html">Basic Needs</a></li>
+          <li><a href="communityDevelopment.html">Community Development</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get Involved</h4>
+        <ul>
+          <li><a href="../index.html#donate">Donate</a></li>
+          <li><a href="../index.html#volunteer">Volunteer</a></li>
+          <li><a href="#">Partner With Us</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Enyuata Maasai Experience. All rights reserved.</span>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  "use strict";
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  var nav = document.getElementById('siteNav');
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    var y = window.scrollY;
+    nav.classList.toggle('scrolled', y > 12);
+    toTop.classList.toggle('show', y > 600);
+  }, { passive:true });
+
+  var hamburger = document.getElementById('hamburgerBtn');
+  var mobileMenu = document.getElementById('mobileMenu');
+  var mobileClose = document.getElementById('mobileClose');
+  function closeMenu(){
+    mobileMenu.classList.remove('open');
+    mobileClose.classList.remove('open');
+    hamburger.setAttribute('aria-expanded','false');
+  }
+  hamburger.addEventListener('click', function(){
+    var open = mobileMenu.classList.toggle('open');
+    mobileClose.classList.toggle('open', open);
+    hamburger.setAttribute('aria-expanded', String(open));
+  });
+  mobileClose.addEventListener('click', closeMenu);
+  mobileMenu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeMenu); });
+
+  toTop.addEventListener('click', function(){
+    window.scrollTo({ top:0, behavior:'smooth' });
+  });
+
+  var reveals = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold:0.15 });
+    reveals.forEach(function(el){ io.observe(el); });
+  } else {
+    reveals.forEach(function(el){ el.classList.add('in'); });
+  }
+})();
+</script>
+
+</body>
+</html>

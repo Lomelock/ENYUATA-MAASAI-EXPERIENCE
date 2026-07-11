@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Education for Every Child | Enyuata Maasai Experience</title>
+<meta name="description" content="Education for Every Child is Enyuata Maasai Experience's program addressing the barriers keeping Maasai children — especially girls — out of school in Tanzania, and our plan to close the gap.">
+
+<meta property="og:title" content="Education for Every Child | Enyuata Maasai Experience">
+<meta property="og:description" content="Understanding why so many Maasai children never make it through school — and our roadmap to change that.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1200&q=80">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23B22222'/%3E%3Ccircle cx='50' cy='50' r='30' fill='%23FBC02D'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Work+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   DESIGN TOKENS — inherited from the main Enyuata site
+   ============================================================ */
+:root{
+  --red: #B22222;
+  --red-deep: #8C1B1B;
+  --orange: #F57C00;
+  --gold: #FBC02D;
+  --white: #FFFFFF;
+  --cream: #FAF6EE;
+  --grey-100: #F8F9FA;
+  --charcoal: #212121;
+  --earth: #2E1C15;
+  --earth-soft: #4A2E22;
+  --text-muted: #6b6058;
+  --border-soft: rgba(33,33,33,0.08);
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Work Sans', sans-serif;
+  --maxw: 1240px;
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 28px;
+  --shadow-soft: 0 20px 50px -25px rgba(46, 28, 21, 0.35);
+  --shadow-card: 0 12px 30px -18px rgba(46, 28, 21, 0.28);
+  --ease: cubic-bezier(.22,1,.36,1);
+}
+
+*{ box-sizing:border-box; margin:0; padding:0; }
+html{ scroll-behavior:smooth; }
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior:auto; }
+  *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; }
+}
+body{
+  font-family: var(--font-body);
+  color: var(--charcoal);
+  background: var(--white);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{ max-width:100%; display:block; }
+a{ color:inherit; text-decoration:none; }
+ul,ol{ list-style:none; }
+button{ font-family:inherit; cursor:pointer; border:none; background:none; }
+
+.wrap{ max-width:var(--maxw); margin:0 auto; padding:0 32px; }
+section{ position:relative; }
+h1,h2,h3,h4{ font-family:var(--font-display); font-weight:600; color:var(--earth); line-height:1.15; }
+.eyebrow{
+  display:inline-flex; align-items:center; gap:10px;
+  font-size:0.78rem; font-weight:700; letter-spacing:0.14em; text-transform:uppercase;
+  color:var(--red); margin-bottom:16px;
+}
+.eyebrow::before{ content:""; width:22px; height:2px; background:var(--gold); display:inline-block; border-radius:2px; }
+.eyebrow.on-dark{ color:var(--gold); }
+
+.section-head{ max-width:700px; margin-bottom:52px; }
+.section-head.center{ margin-left:auto; margin-right:auto; text-align:center; }
+.section-head p{ color:var(--text-muted); font-size:1.05rem; margin-top:16px; }
+
+.sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+.skip-link{
+  position:absolute; left:16px; top:-60px; background:var(--red); color:#fff; padding:12px 20px;
+  border-radius:8px; z-index:999; transition:top .2s var(--ease);
+}
+.skip-link:focus{ top:16px; }
+:focus-visible{ outline:3px solid var(--gold); outline-offset:3px; }
+
+.beadwork{
+  height:14px; width:100%;
+  background-image:
+    linear-gradient(135deg, var(--red) 25%, transparent 25%),
+    linear-gradient(225deg, var(--red) 25%, transparent 25%),
+    linear-gradient(45deg, var(--gold) 25%, transparent 25%),
+    linear-gradient(315deg, var(--orange) 25%, var(--cream) 25%);
+  background-position: 14px 0, 14px 0, 0 0, 0 0;
+  background-size: 28px 14px;
+  background-repeat:repeat-x;
+  background-color: var(--cream);
+}
+.beadwork.on-dark{ background-color: var(--earth); }
+
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:8px;
+  padding:13px 26px; border-radius:100px; font-weight:600; font-size:0.95rem;
+  transition: transform .25s var(--ease), box-shadow .25s var(--ease), background .25s var(--ease);
+  white-space:nowrap;
+}
+.btn-primary{ background:linear-gradient(120deg, var(--red), var(--red-deep)); color:#fff; box-shadow: 0 10px 24px -10px rgba(178,34,34,0.55); }
+.btn-primary:hover{ transform:translateY(-2px); box-shadow:0 16px 30px -12px rgba(178,34,34,0.6); }
+.btn-gold{ background:linear-gradient(120deg, var(--gold), var(--orange)); color:var(--earth); box-shadow:0 10px 24px -10px rgba(245,124,0,0.5); }
+.btn-gold:hover{ transform:translateY(-2px); box-shadow:0 16px 30px -12px rgba(245,124,0,0.55); }
+.btn-outline{ background:transparent; color:var(--white); box-shadow:inset 0 0 0 2px rgba(255,255,255,0.75); }
+.btn-outline:hover{ background:rgba(255,255,255,0.14); transform:translateY(-2px); }
+.btn-outline-dark{ background:transparent; color:var(--earth); box-shadow:inset 0 0 0 2px rgba(46,28,21,0.3); }
+.btn-outline-dark:hover{ background:rgba(46,28,21,0.06); }
+
+/* ============================================================
+   NAV (shared)
+   ============================================================ */
+.site-nav{
+  position:sticky; top:0; z-index:500;
+  background:rgba(255,255,255,0.92);
+  backdrop-filter:blur(10px); -webkit-backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--border-soft);
+  transition: box-shadow .3s var(--ease);
+}
+.site-nav.scrolled{ box-shadow: 0 8px 24px -18px rgba(46,28,21,0.4); }
+.nav-inner{ max-width:var(--maxw); margin:0 auto; padding:16px 32px; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+.brand{ display:flex; align-items:center; gap:12px; }
+.brand-mark{
+  width:44px; height:44px; border-radius:50%; flex:none;
+  background: conic-gradient(from 210deg, var(--red), var(--orange), var(--gold), var(--red));
+  display:flex; align-items:center; justify-content:center;
+  box-shadow: inset 0 0 0 3px rgba(255,255,255,0.65);
+}
+.brand-mark span{ font-family:var(--font-display); font-weight:700; color:#fff; font-size:1rem; }
+.brand-name{ display:flex; flex-direction:column; line-height:1.1; }
+.brand-name strong{ font-family:var(--font-display); font-size:1.08rem; font-weight:700; color:var(--earth); }
+.brand-name em{ font-style:normal; font-size:0.68rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--red); font-weight:600; margin-top:2px;}
+.nav-links{ display:flex; align-items:center; gap:30px; }
+.nav-links a{ font-size:0.95rem; font-weight:500; color:var(--charcoal); position:relative; padding:6px 2px; }
+.nav-links a::after{ content:""; position:absolute; left:0; bottom:0; width:0; height:2px; background:var(--gold); transition:width .25s var(--ease); }
+.nav-links a:hover::after, .nav-links a:focus-visible::after{ width:100%; }
+.nav-donate{ display:flex; align-items:center; gap:18px; }
+.hamburger{ display:none; flex-direction:column; gap:5px; width:26px; padding:8px; }
+.hamburger span{ height:2px; background:var(--earth); border-radius:2px; transition:.3s var(--ease); }
+.mobile-menu{ display:none; position:fixed; inset:0; background:var(--white); z-index:600; padding:100px 32px 40px; flex-direction:column; gap:26px; overflow-y:auto; }
+.mobile-menu.open{ display:flex; }
+.mobile-menu a{ font-family:var(--font-display); font-size:1.6rem; color:var(--earth); }
+.mobile-close{ position:fixed; top:20px; right:24px; z-index:610; display:none; font-size:1.8rem; color:var(--earth); }
+.mobile-close.open{ display:block; }
+
+/* ============================================================
+   PAGE HERO
+   ============================================================ */
+.page-hero{ position:relative; min-height:72vh; display:flex; align-items:flex-end; color:#fff; overflow:hidden; }
+.page-hero-media{ position:absolute; inset:0; z-index:0; }
+.page-hero-media img{ width:100%; height:100%; object-fit:cover; }
+.page-hero-media::after{
+  content:""; position:absolute; inset:0;
+  background:
+    linear-gradient(0deg, rgba(20,10,7,0.9) 0%, rgba(46,28,21,0.5) 48%, rgba(59,20,14,0.3) 100%),
+    linear-gradient(100deg, rgba(140,27,27,0.5) 0%, rgba(0,0,0,0) 55%);
+}
+.breadcrumb{ position:relative; z-index:2; display:flex; align-items:center; gap:8px; font-size:0.85rem; color:rgba(255,255,255,0.75); padding:28px 0 0; }
+.breadcrumb a{ color:rgba(255,255,255,0.9); font-weight:600; }
+.breadcrumb a:hover{ color:var(--gold); }
+.page-hero-inner{ position:relative; z-index:2; padding:40px 0 76px; max-width:var(--maxw); margin:0 auto; width:100%; }
+.page-hero-tag{
+  display:inline-flex; align-items:center; gap:10px; padding:8px 16px; border:1px solid rgba(255,255,255,0.35);
+  border-radius:100px; font-size:0.78rem; letter-spacing:0.1em; text-transform:uppercase; font-weight:600;
+  margin-bottom:24px; background:rgba(255,255,255,0.08); backdrop-filter:blur(6px);
+}
+.page-hero-tag .dot{ width:7px; height:7px; border-radius:50%; background:var(--gold); }
+.page-hero h1{ color:#fff; font-size:clamp(2.1rem, 4.6vw, 3.8rem); max-width:18ch; letter-spacing:-0.01em; }
+.page-hero p.lede{ margin-top:22px; font-size:1.1rem; max-width:60ch; color:rgba(255,255,255,0.88); }
+.page-hero-ctas{ display:flex; gap:16px; margin-top:34px; flex-wrap:wrap; }
+
+/* ============================================================
+   QUICK FACTS STRIP
+   ============================================================ */
+.facts{ background:var(--earth); color:#fff; padding:64px 0; }
+.facts-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+.fact-card{ padding:8px 6px; }
+.fact-num{
+  font-family:var(--font-display); font-size:clamp(1.9rem,3vw,2.6rem); font-weight:700;
+  background:linear-gradient(120deg, var(--gold), var(--orange));
+  -webkit-background-clip:text; background-clip:text; color:transparent; line-height:1;
+}
+.fact-label{ margin-top:10px; font-size:0.92rem; color:rgba(255,255,255,0.82); line-height:1.5; }
+.fact-source{ margin-top:6px; font-size:0.72rem; color:rgba(255,255,255,0.48); }
+
+/* ============================================================
+   INTRO / FRAMING
+   ============================================================ */
+.intro{ padding:110px 0 90px; background:#fff; }
+.intro-grid{ display:grid; grid-template-columns:1fr 1fr; gap:64px; align-items:start; }
+.intro-copy p{ color:var(--text-muted); font-size:1.04rem; margin-bottom:18px; }
+.intro-copy p:last-child{ margin-bottom:0; }
+.intro-aside{
+  background:var(--grey-100); border-left:3px solid var(--gold); border-radius:var(--radius-sm);
+  padding:28px 26px;
+}
+.intro-aside h4{ font-size:1rem; margin-bottom:10px; }
+.intro-aside p{ font-size:0.9rem; color:var(--text-muted); }
+
+/* ============================================================
+   CURRENT REALITY
+   ============================================================ */
+.reality{ padding:110px 0; background:var(--cream); }
+.reality-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:24px; }
+.reality-card{
+  background:#fff; border-radius:var(--radius-md); padding:32px 30px; box-shadow:var(--shadow-card);
+  display:flex; flex-direction:column; gap:14px;
+}
+.reality-icon{
+  width:48px; height:48px; border-radius:12px; display:flex; align-items:center; justify-content:center;
+  font-size:1.3rem; flex:none;
+}
+.reality-card h3{ font-size:1.14rem; }
+.reality-card p{ color:var(--text-muted); font-size:0.94rem; }
+.reality-card .src{ font-size:0.75rem; color:var(--text-muted); opacity:0.75; margin-top:2px; }
+
+/* ============================================================
+   BARRIERS (why it persists)
+   ============================================================ */
+.barriers{ padding:110px 0; background:#fff; }
+.barriers-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:2px; background:var(--border-soft); border-radius:var(--radius-lg); overflow:hidden; }
+.barrier-item{ background:#fff; padding:34px 28px; transition:background .3s var(--ease); }
+.barrier-item:hover{ background:var(--grey-100); }
+.barrier-item h3{ font-size:1.04rem; margin-bottom:8px; }
+.barrier-item p{ font-size:0.89rem; color:var(--text-muted); }
+
+/* ============================================================
+   WAY FORWARD — pillars
+   ============================================================ */
+.forward{ padding:110px 0; background:var(--earth); color:#fff; }
+.forward .section-head p{ color:rgba(255,255,255,0.72); }
+.pillars-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
+.pillar-card{
+  background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1); border-radius:var(--radius-md);
+  padding:30px 26px; transition:transform .3s var(--ease), background .3s var(--ease);
+}
+.pillar-card:hover{ transform:translateY(-6px); background:rgba(255,255,255,0.08); }
+.pillar-num{ font-family:var(--font-display); font-size:0.85rem; color:var(--gold); font-weight:700; letter-spacing:0.06em; }
+.pillar-card h3{ color:#fff; font-size:1.08rem; margin:14px 0 10px; }
+.pillar-card p{ font-size:0.9rem; color:rgba(255,255,255,0.7); }
+
+/* ============================================================
+   ROADMAP — phased plan
+   ============================================================ */
+.roadmap{ padding:110px 0; background:var(--cream); }
+.roadmap-track{ position:relative; display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+.roadmap-track::before{
+  content:""; position:absolute; top:26px; left:8%; right:8%; height:2px;
+  background:repeating-linear-gradient(90deg, var(--gold) 0 10px, transparent 10px 18px);
+  z-index:0;
+}
+.phase-card{ position:relative; z-index:1; }
+.phase-badge{
+  width:52px; height:52px; border-radius:50%; background:#fff; box-shadow:var(--shadow-card);
+  display:flex; align-items:center; justify-content:center; font-family:var(--font-display);
+  font-weight:700; color:var(--red); font-size:1.1rem; margin-bottom:20px; border:2px solid var(--gold);
+}
+.phase-card h3{ font-size:1.08rem; margin-bottom:8px; }
+.phase-card .phase-when{ display:block; font-size:0.76rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--red); font-weight:700; margin-bottom:10px; }
+.phase-card p{ font-size:0.92rem; color:var(--text-muted); }
+.phase-card ul{ margin-top:12px; display:flex; flex-direction:column; gap:8px; }
+.phase-card ul li{ font-size:0.86rem; color:var(--text-muted); padding-left:18px; position:relative; }
+.phase-card ul li::before{ content:"—"; position:absolute; left:0; color:var(--gold); font-weight:700; }
+
+/* ============================================================
+   DISCLOSURE
+   ============================================================ */
+.disclosure{ padding:70px 0; background:#fff; }
+.disclosure-box{
+  background:var(--grey-100); border-radius:var(--radius-lg); padding:40px 44px;
+  display:flex; gap:24px; align-items:flex-start;
+}
+.disclosure-icon{ font-size:1.6rem; color:var(--red); flex:none; }
+.disclosure-box h4{ font-size:1.05rem; margin-bottom:8px; }
+.disclosure-box p{ font-size:0.92rem; color:var(--text-muted); }
+
+/* ============================================================
+   CTA BAND
+   ============================================================ */
+.cta-band{
+  padding:100px 0; text-align:center; color:#fff; position:relative; overflow:hidden;
+  background:linear-gradient(120deg, var(--red) 0%, var(--red-deep) 45%, var(--earth) 100%);
+}
+.cta-band::before{
+  content:""; position:absolute; inset:0; opacity:0.15; pointer-events:none;
+  background-image: radial-gradient(circle, #fff 1.5px, transparent 1.6px);
+  background-size:26px 26px;
+}
+.cta-band h2{ color:#fff; font-size:clamp(1.9rem,3.6vw,2.8rem); max-width:20ch; margin:0 auto 18px; position:relative; }
+.cta-band p{ color:rgba(255,255,255,0.85); max-width:580px; margin:0 auto 34px; position:relative; }
+.cta-actions{ display:flex; gap:16px; justify-content:center; flex-wrap:wrap; position:relative; }
+
+/* ============================================================
+   SOURCES
+   ============================================================ */
+.sources{ padding:60px 0 100px; background:#fff; }
+.sources h4{ font-size:0.9rem; text-transform:uppercase; letter-spacing:0.08em; color:var(--text-muted); margin-bottom:16px; }
+.sources ul{ display:flex; flex-direction:column; gap:8px; }
+.sources li{ font-size:0.84rem; color:var(--text-muted); }
+
+/* ============================================================
+   FOOTER (shared)
+   ============================================================ */
+footer{ background:var(--earth); color:rgba(255,255,255,0.82); padding:70px 0 0; }
+.footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1fr; gap:36px; padding-bottom:46px; border-bottom:1px solid rgba(255,255,255,0.12); }
+.footer-brand p{ font-size:0.88rem; margin:18px 0 22px; color:rgba(255,255,255,0.62); max-width:32ch; }
+.footer-col h4{ color:#fff; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.08em; margin-bottom:18px; }
+.footer-col ul{ display:flex; flex-direction:column; gap:11px; }
+.footer-col a{ font-size:0.9rem; color:rgba(255,255,255,0.68); transition:.2s; }
+.footer-col a:hover{ color:var(--gold); }
+.footer-social{ display:flex; gap:10px; margin-top:6px; }
+.footer-social a{ width:36px; height:36px; border-radius:50%; background:rgba(255,255,255,0.08); display:flex; align-items:center; justify-content:center; }
+.footer-social a:hover{ background:var(--gold); color:var(--earth); }
+.footer-bottom{ display:flex; justify-content:space-between; align-items:center; padding:26px 0; flex-wrap:wrap; gap:14px; font-size:0.82rem; color:rgba(255,255,255,0.55); }
+.footer-legal{ display:flex; gap:22px; }
+.footer-legal a:hover{ color:#fff; }
+.to-top{
+  position:fixed; right:26px; bottom:26px; width:50px; height:50px; border-radius:50%; z-index:400;
+  background:linear-gradient(120deg, var(--red), var(--orange)); color:#fff; display:flex; align-items:center;
+  justify-content:center; box-shadow:0 14px 30px -12px rgba(178,34,34,0.6); opacity:0; pointer-events:none;
+  transform:translateY(10px); transition:.3s var(--ease);
+}
+.to-top.show{ opacity:1; pointer-events:auto; transform:translateY(0); }
+
+.reveal{ opacity:0; transform:translateY(24px); transition:opacity .7s var(--ease), transform .7s var(--ease); }
+.reveal.in{ opacity:1; transform:translateY(0); }
+
+.img-fallback{ display:flex !important; align-items:center; justify-content:center; background:linear-gradient(135deg, var(--cream), var(--grey-100)); color:var(--red); font-size:1.6rem; }
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width:1080px){
+  .facts-grid{ grid-template-columns:repeat(2,1fr); }
+  .reality-grid{ grid-template-columns:1fr; }
+  .barriers-grid{ grid-template-columns:repeat(2,1fr); }
+  .pillars-grid{ grid-template-columns:repeat(2,1fr); }
+  .roadmap-track{ grid-template-columns:1fr; }
+  .roadmap-track::before{ display:none; }
+  .intro-grid{ grid-template-columns:1fr; }
+  .footer-grid{ grid-template-columns:1fr 1fr; }
+}
+@media (max-width:860px){
+  .nav-links{ display:none; }
+  .hamburger{ display:flex; }
+  .nav-donate .btn-primary{ display:none; }
+  .page-hero-inner{ padding:30px 0 60px; }
+  .disclosure-box{ flex-direction:column; padding:30px 26px; }
+}
+@media (max-width:640px){
+  .wrap{ padding:0 20px; }
+  .facts-grid{ grid-template-columns:1fr 1fr; }
+  .barriers-grid{ grid-template-columns:1fr; }
+  .pillars-grid{ grid-template-columns:1fr; }
+  .footer-grid{ grid-template-columns:1fr 1fr; padding-bottom:30px; }
+  .footer-bottom{ flex-direction:column; align-items:flex-start; }
+}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<header class="site-nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand" aria-label="Enyuata Maasai Experience — Home">
+      <span class="brand-mark" aria-hidden="true"><span>EME</span></span>
+      <span class="brand-name">
+        <strong>Enyuata Maasai Experience</strong>
+        <em>Tanzania</em>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#programs">Programs</a>
+      <a href="../index.html#gallery">Gallery</a>
+      <a href="../index.html#volunteer">Volunteer</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <div class="nav-donate">
+      <a href="../index.html#donate" class="btn btn-primary">Donate Now</a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<button class="mobile-close" id="mobileClose" aria-label="Close menu">&times;</button>
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
+  <a href="../index.html">Home</a>
+  <a href="../index.html#about">About</a>
+  <a href="../index.html#programs">Programs</a>
+  <a href="../index.html#gallery">Gallery</a>
+  <a href="../index.html#volunteer">Volunteer</a>
+  <a href="../index.html#contact">Contact</a>
+  <a href="../index.html#donate" class="btn btn-primary" style="align-self:flex-start; margin-top:10px;">Donate Now</a>
+</nav>
+
+<main id="main">
+
+<!-- ============================================================
+     PAGE HERO
+     ============================================================ -->
+<section class="page-hero" aria-label="Education for Every Child introduction">
+  <div class="page-hero-media" aria-hidden="true">
+    <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=2000&q=80" alt="" loading="eager" onerror="this.closest('.page-hero-media').classList.add('img-fallback'); this.remove();">
+  </div>
+  <div class="wrap">
+    <div class="breadcrumb">
+      <a href="../index.html">Home</a><span aria-hidden="true">/</span><a href="../index.html#programs">Programs</a><span aria-hidden="true">/</span><span>Education for Every Child</span>
+    </div>
+    <div class="page-hero-inner">
+      <span class="page-hero-tag"><span class="dot"></span> Program Deep Dive</span>
+      <h1>Education for Every Child</h1>
+      <p class="lede">Across Maasai communities in northern Tanzania, most children still start school later than their peers, walk long distances to get there, and are pulled out long before secondary school begins. This page looks honestly at why — and lays out what Enyuata Maasai Experience is building to change it.</p>
+      <div class="page-hero-ctas">
+        <a href="../index.html#donate" class="btn btn-gold">Support This Program</a>
+        <a href="#way-forward" class="btn btn-outline">See Our Plan</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="beadwork on-dark" role="presentation"></div>
+
+<!-- ============================================================
+     QUICK FACTS
+     ============================================================ -->
+<section class="facts" aria-labelledby="facts-heading">
+  <div class="wrap">
+    <h2 id="facts-heading" class="sr-only">Regional Context</h2>
+    <div class="facts-grid">
+      <div class="fact-card reveal">
+        <div class="fact-num">20–30%</div>
+        <div class="fact-label">estimated primary school enrollment among Maasai children in Tanzania — with girls making up only about a third of those enrolled.</div>
+        <div class="fact-source">Maasai Education Foundation</div>
+      </div>
+      <div class="fact-card reveal">
+        <div class="fact-num">3.2M</div>
+        <div class="fact-label">children aged 7–17 are out of school across Tanzania, of whom 1.2 million have never attended at all.</div>
+        <div class="fact-source">UNICEF Tanzania</div>
+      </div>
+      <div class="fact-card reveal">
+        <div class="fact-num">27%</div>
+        <div class="fact-label">net secondary enrollment rate nationally — rural areas lag urban ones by roughly 28 percentage points.</div>
+        <div class="fact-source">UNICEF Tanzania / World Bank</div>
+      </div>
+      <div class="fact-card reveal">
+        <div class="fact-num">1 in 10</div>
+        <div class="fact-label">textbooks available per rural student in some schools — closer to one book shared between ten children.</div>
+        <div class="fact-source">Powering Potential, Tanzania education review</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     INTRO / FRAMING
+     ============================================================ -->
+<section class="intro" aria-labelledby="intro-heading">
+  <div class="wrap intro-grid">
+    <div class="intro-copy reveal">
+      <span class="eyebrow">Why This Program Exists</span>
+      <h2 id="intro-heading">A pastoralist life and a classroom seat shouldn't be a trade-off.</h2>
+      <p>Tanzania has made real progress getting more children into school nationally, but that progress has been uneven. Maasai children — whose families often move with livestock across long distances from the nearest school — remain among the least likely in the country to enroll, and even less likely to make it all the way through.</p>
+      <p>The reasons aren't a lack of ambition. Research on Maasai communities consistently finds that children and their parents want school to work for them; what's missing is the infrastructure, materials, and flexibility to make attendance realistic alongside herding responsibilities, long distances, and the direct and indirect costs that come with "free" education.</p>
+      <p>Education for Every Child is Enyuata Maasai Experience's response: practical support that removes the barriers standing between a Maasai child and a full school year — uniforms, books, transport, and the kind of flexible, community-anchored approach that respects rather than replaces pastoralist life.</p>
+    </div>
+    <div class="intro-aside reveal">
+      <h4>A note on our data</h4>
+      <p>Enyuata Maasai Experience is a newly established organization. The regional statistics on this page come from published research, UNICEF, and World Bank survey data (cited at the bottom of this page), not from our own program results yet — we have none to report. As our work launches, we'll publish our own enrollment and attendance data here.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CURRENT REALITY
+     ============================================================ -->
+<section class="reality" aria-labelledby="reality-heading">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">The Current Reality</span>
+      <h2 id="reality-heading">What's keeping Maasai children out of school today</h2>
+      <p>A closer look at the four interlinked pressures shaping school access in the communities we work alongside.</p>
+    </div>
+    <div class="reality-grid">
+      <article class="reality-card reveal">
+        <div class="reality-icon" style="background:rgba(178,34,34,0.1); color:var(--red);">✎</div>
+        <h3>Enrollment starts low and drops further</h3>
+        <p>Studies of Maasai communities in Tanzania estimate primary enrollment at roughly a fifth to a third of school-age children — well below the national average — with girls consistently underrepresented among those who do enroll. For the children who do start, secondary transition rates fall even further.</p>
+        <span class="src">Source: Maasai Education Foundation; UNICEF Tanzania</span>
+      </article>
+      <article class="reality-card reveal">
+        <div class="reality-icon" style="background:rgba(245,124,0,0.12); color:var(--orange);">⛰</div>
+        <h3>Distance and a pastoralist lifestyle work against attendance</h3>
+        <p>Research on rural Tanzania finds pastoralist households are the least likely of any livelihood group to invest in their children's schooling, largely because herding requires mobility that a fixed school schedule doesn't accommodate — and rural students already travel over 30 minutes to reach school on average.</p>
+        <span class="src">Sources: ScienceDirect, "Sending children to school"; World Bank Tanzania Panel Survey</span>
+      </article>
+      <article class="reality-card reveal">
+        <div class="reality-icon" style="background:rgba(251,192,45,0.16); color:#B98900;">💰</div>
+        <h3>"Free" education still carries real costs</h3>
+        <p>Even after Tanzania abolished school fees, families still pay for uniforms, exercise books, transport, and boarding — costs that Human Rights Watch and independent researchers repeatedly identify as the reason the poorest students, including many Maasai families, still can't attend consistently.</p>
+        <span class="src">Sources: Human Rights Watch; World Bank Gender Equity report</span>
+      </article>
+      <article class="reality-card reveal">
+        <div class="reality-icon" style="background:rgba(178,34,34,0.1); color:var(--red);">📚</div>
+        <h3>Under-resourced classrooms limit what school can offer</h3>
+        <p>Rural schools frequently lack enough textbooks and trained teachers, with some classrooms sharing one book between ten students — and national reading assessments show only a small share of early-grade students reading at the expected level, meaning attendance alone doesn't guarantee learning.</p>
+        <span class="src">Source: Powering Potential, Tanzania education system review</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     BARRIERS
+     ============================================================ -->
+<section class="barriers" aria-labelledby="barriers-heading">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Root Causes</span>
+      <h2 id="barriers-heading">Why these patterns persist</h2>
+      <p>None of this happens because Maasai families don't value learning. It happens because of structural gaps that targeted, community-led support can actually close.</p>
+    </div>
+    <div class="barriers-grid reveal">
+      <div class="barrier-item"><h3>Indirect costs of "free" school</h3><p>Uniforms, exercise books, and transport remain out of reach for many families even without tuition fees.</p></div>
+      <div class="barrier-item"><h3>Long distances to the nearest school</h3><p>Rural children already travel more than half an hour on average, and pastoralist movement can push that further still.</p></div>
+      <div class="barrier-item"><h3>Herding responsibilities</h3><p>Children, especially boys, are often needed for livestock work that competes directly with a fixed school day.</p></div>
+      <div class="barrier-item"><h3>Early marriage and pregnancy</h3><p>For girls, marriage and pregnancy remain leading causes of dropout, particularly from age twelve onward.</p></div>
+      <div class="barrier-item"><h3>Thin school resources</h3><p>Shortages of textbooks, desks, and trained teachers make it harder for schools to hold students' interest and results.</p></div>
+      <div class="barrier-item"><h3>Language transition</h3><p>The shift from Swahili to English instruction in secondary school adds a further hurdle for students already behind.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WAY FORWARD — PILLARS
+     ============================================================ -->
+<section class="forward" id="way-forward" aria-labelledby="forward-heading">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow on-dark">The Way Forward</span>
+      <h2 id="forward-heading" style="color:#fff;">Our approach to Education for Every Child</h2>
+      <p>A program built around six pillars — each addressing one link in the chain between distance, cost, and a child staying in school long enough to finish.</p>
+    </div>
+    <div class="pillars-grid">
+      <div class="pillar-card reveal">
+        <span class="pillar-num">Pillar 01</span>
+        <h3>Uniforms &amp; School Supplies</h3>
+        <p>Covering the indirect costs — uniforms, exercise books, and stationery — that keep otherwise willing families from enrolling their children.</p>
+      </div>
+      <div class="pillar-card reveal">
+        <span class="pillar-num">Pillar 02</span>
+        <h3>Scholarships for Secondary School</h3>
+        <p>Targeted support to help students, especially girls, cross the gap between primary completion and secondary enrollment where dropout is steepest.</p>
+      </div>
+      <div class="pillar-card reveal">
+        <span class="pillar-num">Pillar 03</span>
+        <h3>Transport &amp; Boarding Support</h3>
+        <p>Helping cover the cost of transport or nearby boarding for children whose families move seasonally with livestock.</p>
+      </div>
+      <div class="pillar-card reveal">
+        <span class="pillar-num">Pillar 04</span>
+        <h3>Books &amp; Classroom Materials</h3>
+        <p>Working with schools to close textbook shortages so every student has the materials to actually learn, not just attend.</p>
+      </div>
+      <div class="pillar-card reveal">
+        <span class="pillar-num">Pillar 05</span>
+        <h3>Family &amp; Community Engagement</h3>
+        <p>Working with parents and elders to build flexible arrangements that respect herding responsibilities instead of competing with them.</p>
+      </div>
+      <div class="pillar-card reveal">
+        <span class="pillar-num">Pillar 06</span>
+        <h3>Girls' Retention Support</h3>
+        <p>Coordinating with our Women's Dignity Initiative so hygiene access and rights education keep girls in class through adolescence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="beadwork" role="presentation"></div>
+
+<!-- ============================================================
+     ROADMAP — PHASED PLAN
+     ============================================================ -->
+<section class="roadmap" aria-labelledby="roadmap-heading">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow">Our Roadmap</span>
+      <h2 id="roadmap-heading">How we plan to get there</h2>
+      <p>A phased rollout, starting narrow and trusted, then scaling as we learn what works in each community.</p>
+    </div>
+    <div class="roadmap-track reveal">
+      <div class="phase-card">
+        <div class="phase-badge">01</div>
+        <span class="phase-when">Phase One — Listen &amp; Pilot</span>
+        <h3>Community entry and first supply distribution</h3>
+        <p>Before committing resources, we sit with parents, elders, and head teachers to understand each school's specific gaps.</p>
+        <ul>
+          <li>Partner with 2–3 primary schools in Arusha Region</li>
+          <li>First distribution of uniforms and school supplies</li>
+          <li>Baseline enrollment and attendance data collection</li>
+        </ul>
+      </div>
+      <div class="phase-card">
+        <div class="phase-badge">02</div>
+        <span class="phase-when">Phase Two — Support &amp; Retain</span>
+        <h3>Scholarships, materials, and family engagement</h3>
+        <p>With trust established, we invest in the transition points where dropout is highest — especially the move to secondary school.</p>
+        <ul>
+          <li>First scholarship cohort for secondary transition</li>
+          <li>Classroom book and materials support</li>
+          <li>Flexible-schedule pilots with participating schools</li>
+        </ul>
+      </div>
+      <div class="phase-card">
+        <div class="phase-badge">03</div>
+        <span class="phase-when">Phase Three — Scale &amp; Sustain</span>
+        <h3>Transport, boarding, and expansion</h3>
+        <p>Addressing the distance barrier directly, while extending the program to new communities as capacity grows.</p>
+        <ul>
+          <li>Transport or boarding support for distant students</li>
+          <li>Teacher-training partnerships</li>
+          <li>Expansion to additional Maasai communities</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     DISCLOSURE
+     ============================================================ -->
+<section class="disclosure">
+  <div class="wrap">
+    <div class="disclosure-box reveal">
+      <span class="disclosure-icon" aria-hidden="true">ⓘ</span>
+      <div>
+        <h4>Where we are right now</h4>
+        <p>Enyuata Maasai Experience is a newly founded nonprofit. The roadmap above describes our plan, not results already achieved. As Phase One launches, we'll replace these projections with real enrollment numbers, real partner schools, and real stories from the children and families in the program — with full transparency about what's working and what needs to change.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CTA BAND
+     ============================================================ -->
+<section class="cta-band" aria-labelledby="cta-heading">
+  <div class="wrap">
+    <h2 id="cta-heading">Help Us Move From Plan to Practice</h2>
+    <p>A uniform, a set of textbooks, or a scholarship toward secondary school — every contribution moves a child closer to finishing what they started.</p>
+    <div class="cta-actions">
+      <a href="../index.html#donate" class="btn btn-gold">Donate to This Program</a>
+      <a href="../index.html#volunteer" class="btn btn-outline">Volunteer With Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SOURCES
+     ============================================================ -->
+<section class="sources">
+  <div class="wrap">
+    <h4>Sources referenced on this page</h4>
+    <ul>
+      <li>Maasai Education Foundation, "Tanzania Education System and Educational Attainment"</li>
+      <li>UNICEF Tanzania, Education overview</li>
+      <li>World Bank, "The latest Tanzanian National Panel Survey shows progress in education" (2024)</li>
+      <li>World Bank, "Gender Equity and Fee-Free Basic Education in Tanzania"</li>
+      <li>Human Rights Watch, "'I Had a Dream to Finish School': Barriers to Secondary Education in Tanzania" (2017)</li>
+      <li>Powering Potential, "An Inside Look at the Tanzanian Education System: Challenges and Opportunities"</li>
+      <li>ScienceDirect, "Sending children to school: rural livelihoods and parental investment in education in northern Tanzania"</li>
+      <li>EPDC / UNESCO Institute for Statistics, Tanzania National Education Profile</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true"><span>EME</span></span>
+          <span class="brand-name" style="color:#fff;">
+            <strong style="color:#fff;">Enyuata Maasai Experience</strong>
+            <em style="color:var(--gold);">Tanzania</em>
+          </span>
+        </div>
+        <p>Empowering Maasai Communities. Preserving Culture. Inspiring Hope. A nonprofit organization based in Tanzania, welcoming support from around the world.</p>
+        <div class="footer-social" aria-label="Social media">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">◎</a>
+          <a href="#" aria-label="X / Twitter">𝕏</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../index.html#about">About Us</a></li>
+          <li><a href="../index.html#programs">Programs</a></li>
+          <li><a href="../index.html#gallery">Gallery</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="wome's.html">Women's Dignity</a></li>
+          <li><a href="educationalsupport.html">Education Support</a></li>
+          <li><a href="basicneeds.html">Basic Needs</a></li>
+          <li><a href="communityDevelopment.html">Community Development</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Get Involved</h4>
+        <ul>
+          <li><a href="../index.html#donate">Donate</a></li>
+          <li><a href="../index.html#volunteer">Volunteer</a></li>
+          <li><a href="#">Partner With Us</a></li>
+          <li><a href="#">Newsletter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Enyuata Maasai Experience. All rights reserved.</span>
+      <div class="footer-legal">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+<script>
+(function(){
+  "use strict";
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  var nav = document.getElementById('siteNav');
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    var y = window.scrollY;
+    nav.classList.toggle('scrolled', y > 12);
+    toTop.classList.toggle('show', y > 600);
+  }, { passive:true });
+
+  var hamburger = document.getElementById('hamburgerBtn');
+  var mobileMenu = document.getElementById('mobileMenu');
+  var mobileClose = document.getElementById('mobileClose');
+  function closeMenu(){
+    mobileMenu.classList.remove('open');
+    mobileClose.classList.remove('open');
+    hamburger.setAttribute('aria-expanded','false');
+  }
+  hamburger.addEventListener('click', function(){
+    var open = mobileMenu.classList.toggle('open');
+    mobileClose.classList.toggle('open', open);
+    hamburger.setAttribute('aria-expanded', String(open));
+  });
+  mobileClose.addEventListener('click', closeMenu);
+  mobileMenu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeMenu); });
+
+  toTop.addEventListener('click', function(){
+    window.scrollTo({ top:0, behavior:'smooth' });
+  });
+
+  var reveals = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold:0.15 });
+    reveals.forEach(function(el){ io.observe(el); });
+  } else {
+    reveals.forEach(function(el){ el.classList.add('in'); });
+  }
+})();
+</script>
+
+</body>
+</html>
